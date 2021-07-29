@@ -10,17 +10,25 @@ import Foundation
 final class ArticleListViewModel {
     
     private var listUseCase: ArticleListUseCase!
-    private var articleList: ArticleListModel?
+    private var articleList: [Article?] = []
     
     init(useCase: ArticleListUseCase = ArticleListUseCase()) {
         self.listUseCase =  useCase
+    }
+    
+    var numberOfRows: Int {
+        articleList.count
+    }
+    
+    func articleForRow(at row: Int) -> Article? {
+        return articleList[row]
     }
     
     func fetchList(onCompletion: @escaping ((Bool) -> Void)) {
         listUseCase.execute { response in
             switch response {
             case .success(let articles):
-                self.articleList = articles
+                self.articleList = articles?.results ?? []
                 onCompletion(true)
             case .failure(let error):
                 // TODO

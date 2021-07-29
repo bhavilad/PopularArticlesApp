@@ -29,9 +29,9 @@ final class ArticleListTests: XCTestCase {
                 XCTAssert(articles?.numResults == 3)
                 XCTAssertTrue(articles?.results.isEmpty == false)
                 
-                let firstArticle = articles?.results.first
-                XCTAssertTrue(firstArticle?.id == 100000007873785)
-                XCTAssertNotNil(firstArticle?.url != nil)
+                let firstArticle = articles?.results.first!
+                XCTAssertTrue(firstArticle!.id == 100000007873785)
+                XCTAssertNotNil(firstArticle!.url != nil)
                 
             case .failure(_):
                 XCTFail("Article List Test Fail.")

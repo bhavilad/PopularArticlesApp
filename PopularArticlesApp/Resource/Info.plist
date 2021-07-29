@@ -69,5 +69,10 @@
 	<string>${API_KEY}</string>
 	<key>baseUrl</key>
 	<string>$(BASE_URL)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CheltenhamCond-Regular</string>
+		<string>CheltenhamCond-Bold</string>
+	</array>
 </dict>
 </plist>

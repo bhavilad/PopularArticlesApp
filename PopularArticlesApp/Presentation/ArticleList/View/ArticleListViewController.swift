@@ -9,12 +9,14 @@ import UIKit
 
 class ArticleListViewController: UIViewController {
 
-    private let viewModel = ArticleListViewModel()
-    private let tableView: UITableView! = nil
+    @IBOutlet private weak var tableView: UITableView!
+    
+    let viewModel = ArticleListViewModel()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
      
+        self.title = "Popular Articles"
         setupUI()
     }
     
@@ -23,9 +25,13 @@ class ArticleListViewController: UIViewController {
         loadData()
     }
     
+    private func registerCell() {
+        tableView.register(UINib(nibName: ArticleTableViewCell.name, bundle: nil), forCellReuseIdentifier: ArticleTableViewCell.name)
+    }
+    
     private func loadData() {
-        viewModel.fetchList { success in
-            print("success")
+        viewModel.fetchList { [weak self] success in
+            self?.tableView.reloadData()
         }
     }
 }

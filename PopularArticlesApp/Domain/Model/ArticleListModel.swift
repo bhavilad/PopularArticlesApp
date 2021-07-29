@@ -10,7 +10,7 @@ import Foundation
 struct ArticleListModel: BaseModel {
     let status, copyright: String
     let numResults: Int
-    let results: [Article]
+    let results: [Article?]
     
     enum CodingKeys: String, CodingKey {
         case status, copyright
@@ -40,6 +40,10 @@ struct Article: Codable {
         case byline, type, title, abstract
         case media
     }
+    
+    var thumbImage: String? {
+        media?.first?.thumbnailImage
+    }
 }
 
 struct Media: Codable {
@@ -53,6 +57,10 @@ struct Media: Codable {
         case type, subType, caption, copyright
         case approvedForSyndication = "approved_for_syndication"
         case mediaMetadata = "media-metadata"
+    }
+    
+    var thumbnailImage: String? {
+        mediaMetadata?.first(where: { $0.format == .standardThumbnail })?.url
     }
 }
 
