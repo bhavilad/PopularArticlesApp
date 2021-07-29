@@ -17,12 +17,12 @@ final class ArticleListUseCase: BaseUseCase<ArticleListModel> {
     }
     
     override func validate() throws {
-        guard UIApplication().apiKey.isEmpty else {
+        guard !UIApplication.shared.apiKey.isEmpty else {
             throw NetworkError.custom(message: "API Key cannot be empty.")
         }
     }
     
-    override func execute(onCompletion: @escaping (Result<ArticleListModel?, NetworkError>) -> Void) {
+    override func process(onCompletion: @escaping (Result<ArticleListModel?, NetworkError>) -> Void) {
         articleRepository.fetch { response in
             onCompletion(response)
         }

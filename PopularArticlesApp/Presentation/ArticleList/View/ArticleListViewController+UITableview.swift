@@ -29,6 +29,17 @@ extension ArticleListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let item = viewModel.articleForRow(at: indexPath.row)
+        performSegue(withIdentifier: "DetailSegue", sender: item?.url)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            guard let vc = segue.destination as? ArticleDetailViewController,
+                  let url = sender as? String else {
+                return
+            }
+            vc.webURL = url
+        }
     }
 }

@@ -71,6 +71,7 @@
 	<string>$(BASE_URL)</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Chomsky-Regular</string>
 		<string>CheltenhamCond-Regular</string>
 		<string>CheltenhamCond-Bold</string>
 	</array>

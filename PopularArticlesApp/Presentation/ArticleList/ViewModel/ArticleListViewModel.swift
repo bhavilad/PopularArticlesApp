@@ -24,15 +24,14 @@ final class ArticleListViewModel {
         return articleList[row]
     }
     
-    func fetchList(onCompletion: @escaping ((Bool) -> Void)) {
+    func fetchList(onCompletion: @escaping ((Bool, NetworkError?) -> Void)) {
         listUseCase.execute { response in
             switch response {
             case .success(let articles):
                 self.articleList = articles?.results ?? []
-                onCompletion(true)
+                onCompletion(true, nil)
             case .failure(let error):
-                // TODO
-                onCompletion(false)
+                onCompletion(false, error)
             }
         }
     }

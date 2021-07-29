@@ -16,7 +16,6 @@ enum ErrorMessages: String {
 }
 
 enum NetworkError: Error {
-    case noInternetConnection
     case error(message: ErrorMessages)
     case custom(message: String)
 }

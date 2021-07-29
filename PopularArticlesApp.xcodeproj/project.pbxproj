@@ -29,13 +29,16 @@
 		BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */; };
 		BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706D26B2D2EF00603540 /* BaseModel.swift */; };
 		BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706F26B2D71300603540 /* BaseUseCase.swift */; };
-		BCFF707226B2DB3C00603540 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */; };
 		BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */; };
 		BCFF707626B2E2E500603540 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707526B2E2E500603540 /* ArticleTableViewCell.swift */; };
 		BCFF707A26B2E4F100603540 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707926B2E4F100603540 /* ReusableView.swift */; };
 		BCFF707C26B2E8D900603540 /* CheltenhamCond-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */; };
 		BCFF707E26B2E91E00603540 /* CheltenhamCond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */; };
 		BCFF708126B2F0A700603540 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BCFF708026B2F0A700603540 /* Kingfisher */; };
+		BCFF708726B2F74900603540 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */; };
+		BCFF708926B2F76000603540 /* ArticleDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */; };
+		BCFF708B26B301CA00603540 /* Chomsky-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */; };
+		BCFF708C26B30C1B00603540 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		BCFF707926B2E4F100603540 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CheltenhamCond-Regular.ttf"; sourceTree = "<group>"; };
 		BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CheltenhamCond-Bold.ttf"; sourceTree = "<group>"; };
+		BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chomsky-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 		BCFF703A26B29B0C00603540 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */,
 				BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */,
 				BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */,
 				BCFF703B26B29B0C00603540 /* Assets.xcassets */,
@@ -188,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFF704026B29B5A00603540 /* ArticleList */,
+				BCFF708426B2F73300603540 /* ArticleDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -299,6 +307,23 @@
 				BCFF706726B2C71A00603540 /* ArticleListTests.swift */,
 			);
 			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		BCFF708426B2F73300603540 /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF708526B2F73300603540 /* View */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		BCFF708526B2F73300603540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */,
+				BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCFF704626B29B5B00603540 /* Main.storyboard in Resources */,
+				BCFF708926B2F76000603540 /* ArticleDetailStoryboard.storyboard in Resources */,
+				BCFF708B26B301CA00603540 /* Chomsky-Regular.otf in Resources */,
 				BCFF707C26B2E8D900603540 /* CheltenhamCond-Regular.ttf in Resources */,
 				BCFF707E26B2E91E00603540 /* CheltenhamCond-Bold.ttf in Resources */,
 				BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */,
@@ -443,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF708C26B30C1B00603540 /* ArticleListViewModel.swift in Sources */,
 				BCFF705E26B2C2FA00603540 /* ArticleListModel.swift in Sources */,
 				BCFF707A26B2E4F100603540 /* ReusableView.swift in Sources */,
 				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
@@ -451,6 +479,7 @@
 				BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */,
 				BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
+				BCFF708726B2F74900603540 /* ArticleDetailViewController.swift in Sources */,
 				BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */,
 				BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */,
 				BCFF705B26B2BCC200603540 /* APIInventory.swift in Sources */,
@@ -459,7 +488,6 @@
 				BCFF707626B2E2E500603540 /* ArticleTableViewCell.swift in Sources */,
 				BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */,
 				BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */,
-				BCFF707226B2DB3C00603540 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
