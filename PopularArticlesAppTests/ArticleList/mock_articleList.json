@@ -1,0 +1,189 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2021 The New York Times Company.  All Rights Reserved.",
+  "num_results": 3,
+  "results": [
+    {
+      "uri": "nyt://article/d3045f90-64e2-578b-b035-544dabdb2c42",
+      "url": "https://www.nytimes.com/2021/07/21/well/move/weight-training-fat.html",
+      "id": 100000007873785,
+      "asset_id": 100000007873785,
+      "source": "New York Times",
+      "published_date": "2021-07-21",
+      "updated": "2021-07-27 22:57:09",
+      "section": "Well",
+      "subsection": "Move",
+      "nytdsection": "well",
+      "adx_keywords": "Exercise;Muscles;Obesity;Research;Weight Lifting;Weight;FASEB Journal",
+      "column": null,
+      "byline": "By Gretchen Reynolds",
+      "type": "Article",
+      "title": "Lifting Weights? Your Fat Cells Would Like to Have a Word.",
+      "abstract": "A cellular chat after your workout may explain in part why weight training burns fat.",
+      "des_facet": [
+        "Exercise",
+        "Muscles",
+        "Obesity",
+        "Research",
+        "Weight Lifting",
+        "Weight"
+      ],
+      "org_facet": [
+        "FASEB Journal"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Andrew Testa for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/07/27/well/physed-weights/physed-weights-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/27/well/physed-weights/physed-weights-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/27/well/physed-weights/physed-weights-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/99f9ac64-2420-5612-80b9-9dcce2621107",
+      "url": "https://www.nytimes.com/2021/07/22/health/coronavirus-breakthrough-infections-delta.html",
+      "id": 100000007874246,
+      "asset_id": 100000007874246,
+      "source": "New York Times",
+      "published_date": "2021-07-22",
+      "updated": "2021-07-26 06:09:59",
+      "section": "Health",
+      "subsection": "",
+      "nytdsection": "health",
+      "adx_keywords": "your-feed-science;Coronavirus Risks and Safety Concerns;Vaccination and Immunization;Disease Rates;Coronavirus (2019-nCoV);United States",
+      "column": null,
+      "byline": "By Apoorva Mandavilli",
+      "type": "Article",
+      "title": "Why Vaccinated People Are Getting ‘Breakthrough’ Infections",
+      "abstract": "The vaccines are effective at preventing serious illness and death, but they are not a golden shield against the coronavirus.",
+      "des_facet": [
+        "your-feed-science",
+        "Coronavirus Risks and Safety Concerns",
+        "Vaccination and Immunization",
+        "Disease Rates",
+        "Coronavirus (2019-nCoV)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+        "United States"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Covid testing at a site in in Los Angeles earlier this month.",
+          "copyright": "Mario Tama/Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/science/22virus-breakthrough1/22virus-breakthrough1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/science/22virus-breakthrough1/22virus-breakthrough1-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/science/22virus-breakthrough1/22virus-breakthrough1-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/fcde30a2-f609-531f-b5c9-8e7df51a2f44",
+      "url": "https://www.nytimes.com/2021/07/24/technology/joseph-mercola-coronavirus-misinformation-online.html",
+      "id": 100000007878607,
+      "asset_id": 100000007878607,
+      "source": "New York Times",
+      "published_date": "2021-07-24",
+      "updated": "2021-07-26 16:01:41",
+      "section": "Technology",
+      "subsection": "",
+      "nytdsection": "technology",
+      "adx_keywords": "Coronavirus (2019-nCoV);Vaccination and Immunization;Rumors and Misinformation;Social Media;Content Type: Personal Profile;Mercola, Joseph M (1954- );Elizabeth, Erin",
+      "column": null,
+      "byline": "By Sheera Frenkel",
+      "type": "Article",
+      "title": "The Most Influential Spreader of Coronavirus Misinformation Online",
+      "abstract": "Researchers and regulators say Joseph Mercola, an osteopathic physician, creates and profits from misleading claims about Covid-19 vaccines.",
+      "des_facet": [
+        "Coronavirus (2019-nCoV)",
+        "Vaccination and Immunization",
+        "Rumors and Misinformation",
+        "Social Media",
+        "Content Type: Personal Profile"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Mercola, Joseph M (1954- )",
+        "Elizabeth, Erin"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Joseph Mercola, an osteopathic physician in Cape Coral, Fla., is a key figure in the “Disinformation Dozen” spreading anti-vaccine messaging, researchers said.",
+          "copyright": "Mercola",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/business/00mercola/00mercola-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/business/00mercola/00mercola-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2021/07/22/business/00mercola/00mercola-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

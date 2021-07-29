@@ -20,7 +20,11 @@ class BaseUseCase<Model: BaseModel> {
                 onCompletion(response)
             }
         } catch let error {
-            onCompletion(.failure(.custom(message: error.localizedDescription)))
+            guard let err = error as? NetworkError else {
+                onCompletion(.failure(.custom(message: error.localizedDescription)))
+                return
+            }
+            onCompletion(.failure(err))
         }
     }
 }
