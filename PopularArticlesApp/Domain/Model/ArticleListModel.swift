@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArticleListModel: Codable {
+struct ArticleListModel: BaseModel {
     let status, copyright: String
     let numResults: Int
     let results: [Article]
@@ -25,12 +25,11 @@ struct Article: Codable {
     let id, assetId: Int?
     let source: Source?
     let publishedDate, updated, section, subsection: String?
-    let nytdsection, adxKeywords: String?
+    let nytdsection: String?
     let byline: String?
     let type: ResultType?
     let title, abstract: String?
     let media: [Media]?
-    let etaId: Int?
     
     enum CodingKeys: String, CodingKey {
         case uri, url, id
@@ -38,10 +37,8 @@ struct Article: Codable {
         case source
         case publishedDate = "published_date"
         case updated, section, subsection, nytdsection
-        case adxKeywords = "adx_keywords"
         case byline, type, title, abstract
         case media
-        case etaId = "eta_id"
     }
 }
 
