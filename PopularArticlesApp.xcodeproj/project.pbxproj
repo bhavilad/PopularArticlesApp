@@ -13,7 +13,7 @@
 		BCFF702A26B2953B00603540 /* PopularArticlesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF702926B2953B00603540 /* PopularArticlesAppUITests.swift */; };
 		BCFF703926B29A8A00603540 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCFF703826B29A8A00603540 /* Alamofire */; };
 		BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF703B26B29B0C00603540 /* Assets.xcassets */; };
-		BCFF704526B29B5B00603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ViewController.swift */; };
+		BCFF704526B29B5B00603540 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ArticleListViewController.swift */; };
 		BCFF704626B29B5B00603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF704426B29B5A00603540 /* Main.storyboard */; };
 		BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704D26B29CD800603540 /* NetworkManager.swift */; };
 		BCFF705026B29CE600603540 /* ArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* ArticleRepository.swift */; };
@@ -29,6 +29,8 @@
 		BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */; };
 		BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706D26B2D2EF00603540 /* BaseModel.swift */; };
 		BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706F26B2D71300603540 /* BaseUseCase.swift */; };
+		BCFF707226B2DB3C00603540 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */; };
+		BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +62,7 @@
 		BCFF702B26B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF703B26B29B0C00603540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFF703C26B29B0C00603540 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCFF704326B29B5A00603540 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFF704326B29B5A00603540 /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		BCFF704426B29B5A00603540 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BCFF704D26B29CD800603540 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BCFF704F26B29CE600603540 /* ArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepository.swift; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListUseCase.swift; sourceTree = "<group>"; };
 		BCFF706D26B2D2EF00603540 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		BCFF706F26B2D71300603540 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleListViewController+UITableview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		BCFF704126B29B5A00603540 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,7 +200,8 @@
 		BCFF704226B29B5A00603540 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BCFF704326B29B5A00603540 /* ViewController.swift */,
+				BCFF704326B29B5A00603540 /* ArticleListViewController.swift */,
+				BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */,
 				BCFF704426B29B5A00603540 /* Main.storyboard */,
 			);
 			path = View;
@@ -421,8 +427,9 @@
 			files = (
 				BCFF705E26B2C2FA00603540 /* ArticleListModel.swift in Sources */,
 				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
-				BCFF704526B29B5B00603540 /* ViewController.swift in Sources */,
+				BCFF704526B29B5B00603540 /* ArticleListViewController.swift in Sources */,
 				BCFF705926B2BB5E00603540 /* UIApplication+Extension.swift in Sources */,
+				BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */,
 				BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
 				BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */,
@@ -432,6 +439,7 @@
 				BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */,
 				BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */,
 				BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */,
+				BCFF707226B2DB3C00603540 /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
