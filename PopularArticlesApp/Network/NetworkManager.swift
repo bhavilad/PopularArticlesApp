@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-enum ErrorMessages: String{
+enum ErrorMessages: String {
     case internetNotAvailable = "Internet not available"
     case apiFailure = "API Failure"
     case emptyData = "Response data is empty"
@@ -16,8 +16,8 @@ enum ErrorMessages: String{
 }
 
 enum NetworkError: Error {
-    case noInternetConnection
     case error(message: ErrorMessages)
+    case custom(message: String)
 }
 
 protocol NetworkAdaptor {

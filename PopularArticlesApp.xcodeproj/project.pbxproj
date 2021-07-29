@@ -10,11 +10,10 @@
 		BCFF700826B2953900603540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF700726B2953900603540 /* AppDelegate.swift */; };
 		BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF700926B2953900603540 /* SceneDelegate.swift */; };
 		BCFF701426B2953B00603540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF701226B2953B00603540 /* LaunchScreen.storyboard */; };
-		BCFF701F26B2953B00603540 /* PopularArticlesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF701E26B2953B00603540 /* PopularArticlesAppTests.swift */; };
 		BCFF702A26B2953B00603540 /* PopularArticlesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF702926B2953B00603540 /* PopularArticlesAppUITests.swift */; };
 		BCFF703926B29A8A00603540 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCFF703826B29A8A00603540 /* Alamofire */; };
 		BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF703B26B29B0C00603540 /* Assets.xcassets */; };
-		BCFF704526B29B5B00603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ViewController.swift */; };
+		BCFF704526B29B5B00603540 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ArticleListViewController.swift */; };
 		BCFF704626B29B5B00603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF704426B29B5A00603540 /* Main.storyboard */; };
 		BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704D26B29CD800603540 /* NetworkManager.swift */; };
 		BCFF705026B29CE600603540 /* ArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* ArticleRepository.swift */; };
@@ -23,6 +22,23 @@
 		BCFF705B26B2BCC200603540 /* APIInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705A26B2BCC200603540 /* APIInventory.swift */; };
 		BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705C26B2C0DC00603540 /* BaseRepository.swift */; };
 		BCFF705E26B2C2FA00603540 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705526B2B5D500603540 /* ArticleListModel.swift */; };
+		BCFF706126B2C44900603540 /* MockNetworkAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706026B2C44900603540 /* MockNetworkAdaptor.swift */; };
+		BCFF706626B2C6BD00603540 /* mock_articleList.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFF706426B2C6BD00603540 /* mock_articleList.json */; };
+		BCFF706826B2C71A00603540 /* ArticleListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706726B2C71A00603540 /* ArticleListTests.swift */; };
+		BCFF706A26B2CA8F00603540 /* mock_articleList_noResult.json in Resources */ = {isa = PBXBuildFile; fileRef = BCFF706926B2CA8F00603540 /* mock_articleList_noResult.json */; };
+		BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */; };
+		BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706D26B2D2EF00603540 /* BaseModel.swift */; };
+		BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF706F26B2D71300603540 /* BaseUseCase.swift */; };
+		BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */; };
+		BCFF707626B2E2E500603540 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707526B2E2E500603540 /* ArticleTableViewCell.swift */; };
+		BCFF707A26B2E4F100603540 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707926B2E4F100603540 /* ReusableView.swift */; };
+		BCFF707C26B2E8D900603540 /* CheltenhamCond-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */; };
+		BCFF707E26B2E91E00603540 /* CheltenhamCond-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */; };
+		BCFF708126B2F0A700603540 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BCFF708026B2F0A700603540 /* Kingfisher */; };
+		BCFF708726B2F74900603540 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */; };
+		BCFF708926B2F76000603540 /* ArticleDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */; };
+		BCFF708B26B301CA00603540 /* Chomsky-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */; };
+		BCFF708C26B30C1B00603540 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +64,13 @@
 		BCFF700926B2953900603540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCFF701326B2953B00603540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFF701A26B2953B00603540 /* PopularArticlesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularArticlesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCFF701E26B2953B00603540 /* PopularArticlesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularArticlesAppTests.swift; sourceTree = "<group>"; };
 		BCFF702026B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF702526B2953B00603540 /* PopularArticlesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularArticlesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFF702926B2953B00603540 /* PopularArticlesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularArticlesAppUITests.swift; sourceTree = "<group>"; };
 		BCFF702B26B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF703B26B29B0C00603540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFF703C26B29B0C00603540 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCFF704326B29B5A00603540 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFF704326B29B5A00603540 /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		BCFF704426B29B5A00603540 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BCFF704D26B29CD800603540 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BCFF704F26B29CE600603540 /* ArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepository.swift; sourceTree = "<group>"; };
@@ -64,6 +79,22 @@
 		BCFF705826B2BB5E00603540 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		BCFF705A26B2BCC200603540 /* APIInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInventory.swift; sourceTree = "<group>"; };
 		BCFF705C26B2C0DC00603540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		BCFF706026B2C44900603540 /* MockNetworkAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkAdaptor.swift; sourceTree = "<group>"; };
+		BCFF706426B2C6BD00603540 /* mock_articleList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_articleList.json; sourceTree = "<group>"; };
+		BCFF706726B2C71A00603540 /* ArticleListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListTests.swift; sourceTree = "<group>"; };
+		BCFF706926B2CA8F00603540 /* mock_articleList_noResult.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_articleList_noResult.json; sourceTree = "<group>"; };
+		BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListUseCase.swift; sourceTree = "<group>"; };
+		BCFF706D26B2D2EF00603540 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BCFF706F26B2D71300603540 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleListViewController+UITableview.swift"; sourceTree = "<group>"; };
+		BCFF707526B2E2E500603540 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		BCFF707926B2E4F100603540 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CheltenhamCond-Regular.ttf"; sourceTree = "<group>"; };
+		BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CheltenhamCond-Bold.ttf"; sourceTree = "<group>"; };
+		BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chomsky-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF708126B2F0A700603540 /* Kingfisher in Frameworks */,
 				BCFF703926B29A8A00603540 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +163,8 @@
 		BCFF701D26B2953B00603540 /* PopularArticlesAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCFF701E26B2953B00603540 /* PopularArticlesAppTests.swift */,
+				BCFF706226B2C6BD00603540 /* ArticleList */,
+				BCFF705F26B2C43600603540 /* Network */,
 				BCFF702026B2953B00603540 /* Info.plist */,
 			);
 			path = PopularArticlesAppTests;
@@ -149,6 +182,9 @@
 		BCFF703A26B29B0C00603540 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF708A26B301CA00603540 /* Chomsky-Regular.otf */,
+				BCFF707D26B2E91E00603540 /* CheltenhamCond-Bold.ttf */,
+				BCFF707B26B2E8D900603540 /* CheltenhamCond-Regular.ttf */,
 				BCFF703B26B29B0C00603540 /* Assets.xcassets */,
 				BCFF703C26B29B0C00603540 /* Info.plist */,
 			);
@@ -159,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFF704026B29B5A00603540 /* ArticleList */,
+				BCFF708426B2F73300603540 /* ArticleDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -175,6 +212,7 @@
 		BCFF704126B29B5A00603540 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF707126B2DB3C00603540 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,8 +220,10 @@
 		BCFF704226B29B5A00603540 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BCFF704326B29B5A00603540 /* ViewController.swift */,
 				BCFF704426B29B5A00603540 /* Main.storyboard */,
+				BCFF704326B29B5A00603540 /* ArticleListViewController.swift */,
+				BCFF707326B2DC0800603540 /* ArticleListViewController+UITableview.swift */,
+				BCFF707526B2E2E500603540 /* ArticleTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +267,7 @@
 		BCFF704B26B29B6A00603540 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF706D26B2D2EF00603540 /* BaseModel.swift */,
 				BCFF705526B2B5D500603540 /* ArticleListModel.swift */,
 			);
 			path = Model;
@@ -235,6 +276,8 @@
 		BCFF704C26B29B6A00603540 /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF706F26B2D71300603540 /* BaseUseCase.swift */,
+				BCFF706B26B2CC9400603540 /* ArticleListUseCase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -243,8 +286,44 @@
 			isa = PBXGroup;
 			children = (
 				BCFF705826B2BB5E00603540 /* UIApplication+Extension.swift */,
+				BCFF707926B2E4F100603540 /* ReusableView.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BCFF705F26B2C43600603540 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF706026B2C44900603540 /* MockNetworkAdaptor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCFF706226B2C6BD00603540 /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF706426B2C6BD00603540 /* mock_articleList.json */,
+				BCFF706926B2CA8F00603540 /* mock_articleList_noResult.json */,
+				BCFF706726B2C71A00603540 /* ArticleListTests.swift */,
+			);
+			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		BCFF708426B2F73300603540 /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF708526B2F73300603540 /* View */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		BCFF708526B2F73300603540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF708826B2F76000603540 /* ArticleDetailStoryboard.storyboard */,
+				BCFF708626B2F74900603540 /* ArticleDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +344,7 @@
 			name = PopularArticlesApp;
 			packageProductDependencies = (
 				BCFF703826B29A8A00603540 /* Alamofire */,
+				BCFF708026B2F0A700603540 /* Kingfisher */,
 			);
 			productName = PopularArticlesApp;
 			productReference = BCFF700426B2953800603540 /* PopularArticlesApp.app */;
@@ -339,6 +419,7 @@
 			mainGroup = BCFF6FFB26B2953800603540;
 			packageReferences = (
 				BCFF703726B29A8A00603540 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BCFF707F26B2F0A700603540 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BCFF700526B2953800603540 /* Products */;
 			projectDirPath = "";
@@ -357,6 +438,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCFF704626B29B5B00603540 /* Main.storyboard in Resources */,
+				BCFF708926B2F76000603540 /* ArticleDetailStoryboard.storyboard in Resources */,
+				BCFF708B26B301CA00603540 /* Chomsky-Regular.otf in Resources */,
+				BCFF707C26B2E8D900603540 /* CheltenhamCond-Regular.ttf in Resources */,
+				BCFF707E26B2E91E00603540 /* CheltenhamCond-Bold.ttf in Resources */,
 				BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */,
 				BCFF701426B2953B00603540 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -366,6 +451,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF706626B2C6BD00603540 /* mock_articleList.json in Resources */,
+				BCFF706A26B2CA8F00603540 /* mock_articleList_noResult.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,15 +470,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF708C26B30C1B00603540 /* ArticleListViewModel.swift in Sources */,
 				BCFF705E26B2C2FA00603540 /* ArticleListModel.swift in Sources */,
+				BCFF707A26B2E4F100603540 /* ReusableView.swift in Sources */,
 				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
-				BCFF704526B29B5B00603540 /* ViewController.swift in Sources */,
+				BCFF704526B29B5B00603540 /* ArticleListViewController.swift in Sources */,
 				BCFF705926B2BB5E00603540 /* UIApplication+Extension.swift in Sources */,
+				BCFF707426B2DC0800603540 /* ArticleListViewController+UITableview.swift in Sources */,
+				BCFF706C26B2CC9400603540 /* ArticleListUseCase.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
+				BCFF708726B2F74900603540 /* ArticleDetailViewController.swift in Sources */,
+				BCFF706E26B2D2EF00603540 /* BaseModel.swift in Sources */,
 				BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */,
 				BCFF705B26B2BCC200603540 /* APIInventory.swift in Sources */,
 				BCFF705026B29CE600603540 /* ArticleRepository.swift in Sources */,
 				BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */,
+				BCFF707626B2E2E500603540 /* ArticleTableViewCell.swift in Sources */,
+				BCFF707026B2D71300603540 /* BaseUseCase.swift in Sources */,
 				BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +495,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFF701F26B2953B00603540 /* PopularArticlesAppTests.swift in Sources */,
+				BCFF706826B2C71A00603540 /* ArticleListTests.swift in Sources */,
+				BCFF706126B2C44900603540 /* MockNetworkAdaptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +829,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		BCFF707F26B2F0A700603540 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -740,6 +844,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BCFF703726B29A8A00603540 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		BCFF708026B2F0A700603540 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCFF707F26B2F0A700603540 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
