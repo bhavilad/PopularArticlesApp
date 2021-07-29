@@ -17,7 +17,8 @@
 		BCFF704526B29B5B00603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ViewController.swift */; };
 		BCFF704626B29B5B00603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF704426B29B5A00603540 /* Main.storyboard */; };
 		BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704D26B29CD800603540 /* NetworkManager.swift */; };
-		BCFF705026B29CE600603540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* BaseRepository.swift */; };
+		BCFF705026B29CE600603540 /* ArticleRepositoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */; };
+		BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705326B2A57500603540 /* NetworkReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 		BCFF704326B29B5A00603540 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCFF704426B29B5A00603540 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BCFF704D26B29CD800603540 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		BCFF704F26B29CE600603540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepositoryRepository.swift; sourceTree = "<group>"; };
+		BCFF705326B2A57500603540 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +190,7 @@
 		BCFF704826B29B6A00603540 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				BCFF704F26B29CE600603540 /* BaseRepository.swift */,
+				BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -196,6 +198,7 @@
 		BCFF704926B29B6A00603540 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF705326B2A57500603540 /* NetworkReachability.swift */,
 				BCFF704D26B29CD800603540 /* NetworkManager.swift */,
 			);
 			path = Network;
@@ -363,7 +366,8 @@
 				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
 				BCFF704526B29B5B00603540 /* ViewController.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
-				BCFF705026B29CE600603540 /* BaseRepository.swift in Sources */,
+				BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */,
+				BCFF705026B29CE600603540 /* ArticleRepositoryRepository.swift in Sources */,
 				BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
