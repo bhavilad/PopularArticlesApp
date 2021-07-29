@@ -17,8 +17,12 @@
 		BCFF704526B29B5B00603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ViewController.swift */; };
 		BCFF704626B29B5B00603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF704426B29B5A00603540 /* Main.storyboard */; };
 		BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704D26B29CD800603540 /* NetworkManager.swift */; };
-		BCFF705026B29CE600603540 /* ArticleRepositoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */; };
+		BCFF705026B29CE600603540 /* ArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* ArticleRepository.swift */; };
 		BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705326B2A57500603540 /* NetworkReachability.swift */; };
+		BCFF705626B2B5D500603540 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705526B2B5D500603540 /* ArticleListModel.swift */; };
+		BCFF705926B2BB5E00603540 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705826B2BB5E00603540 /* UIApplication+Extension.swift */; };
+		BCFF705B26B2BCC200603540 /* APIInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705A26B2BCC200603540 /* APIInventory.swift */; };
+		BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF705C26B2C0DC00603540 /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,12 @@
 		BCFF704326B29B5A00603540 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCFF704426B29B5A00603540 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BCFF704D26B29CD800603540 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepositoryRepository.swift; sourceTree = "<group>"; };
+		BCFF704F26B29CE600603540 /* ArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepository.swift; sourceTree = "<group>"; };
 		BCFF705326B2A57500603540 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		BCFF705526B2B5D500603540 /* ArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
+		BCFF705826B2BB5E00603540 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BCFF705A26B2BCC200603540 /* APIInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInventory.swift; sourceTree = "<group>"; };
+		BCFF705C26B2C0DC00603540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 				BCFF704A26B29B6A00603540 /* Domain */,
 				BCFF704726B29B6A00603540 /* Data */,
 				BCFF704926B29B6A00603540 /* Network */,
+				BCFF705726B2BB3C00603540 /* Utilities */,
 				BCFF703A26B29B0C00603540 /* Resource */,
 				BCFF701226B2953B00603540 /* LaunchScreen.storyboard */,
 			);
@@ -182,6 +191,7 @@
 		BCFF704726B29B6A00603540 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF705A26B2BCC200603540 /* APIInventory.swift */,
 				BCFF704826B29B6A00603540 /* Repository */,
 			);
 			path = Data;
@@ -190,7 +200,8 @@
 		BCFF704826B29B6A00603540 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				BCFF704F26B29CE600603540 /* ArticleRepositoryRepository.swift */,
+				BCFF705C26B2C0DC00603540 /* BaseRepository.swift */,
+				BCFF704F26B29CE600603540 /* ArticleRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 		BCFF704B26B29B6A00603540 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCFF705526B2B5D500603540 /* ArticleListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +237,14 @@
 			children = (
 			);
 			path = Usecase;
+			sourceTree = "<group>";
+		};
+		BCFF705726B2BB3C00603540 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF705826B2BB5E00603540 /* UIApplication+Extension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,10 +385,14 @@
 			files = (
 				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
 				BCFF704526B29B5B00603540 /* ViewController.swift in Sources */,
+				BCFF705926B2BB5E00603540 /* UIApplication+Extension.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
 				BCFF705426B2A57500603540 /* NetworkReachability.swift in Sources */,
-				BCFF705026B29CE600603540 /* ArticleRepositoryRepository.swift in Sources */,
+				BCFF705B26B2BCC200603540 /* APIInventory.swift in Sources */,
+				BCFF705026B29CE600603540 /* ArticleRepository.swift in Sources */,
 				BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */,
+				BCFF705D26B2C0DC00603540 /* BaseRepository.swift in Sources */,
+				BCFF705626B2B5D500603540 /* ArticleListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_KEY = KRYbF5ju3L92ZsKY1l8Vbrq1CueD8Sgc;
+				BASE_URL = "http://api.nytimes.com/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -480,6 +506,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_KEY = KRYbF5ju3L92ZsKY1l8Vbrq1CueD8Sgc;
+				BASE_URL = "http://api.nytimes.com/";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

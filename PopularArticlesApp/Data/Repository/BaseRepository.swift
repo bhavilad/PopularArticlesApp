@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class BaseRepository {
+    
+    var networkManager: NetworkAdaptor
+    
+    init(networkManager: NetworkAdaptor = NetworkManager()) {
+        self.networkManager = networkManager
+    }
+}
