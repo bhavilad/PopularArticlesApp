@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BCFF700826B2953900603540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF700726B2953900603540 /* AppDelegate.swift */; };
 		BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF700926B2953900603540 /* SceneDelegate.swift */; };
-		BCFF700C26B2953900603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF700B26B2953900603540 /* ViewController.swift */; };
-		BCFF700F26B2953900603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF700D26B2953900603540 /* Main.storyboard */; };
-		BCFF701126B2953B00603540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF701026B2953B00603540 /* Assets.xcassets */; };
 		BCFF701426B2953B00603540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF701226B2953B00603540 /* LaunchScreen.storyboard */; };
 		BCFF701F26B2953B00603540 /* PopularArticlesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF701E26B2953B00603540 /* PopularArticlesAppTests.swift */; };
 		BCFF702A26B2953B00603540 /* PopularArticlesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF702926B2953B00603540 /* PopularArticlesAppUITests.swift */; };
+		BCFF703926B29A8A00603540 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCFF703826B29A8A00603540 /* Alamofire */; };
+		BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF703B26B29B0C00603540 /* Assets.xcassets */; };
+		BCFF704526B29B5B00603540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704326B29B5A00603540 /* ViewController.swift */; };
+		BCFF704626B29B5B00603540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF704426B29B5A00603540 /* Main.storyboard */; };
+		BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704D26B29CD800603540 /* NetworkManager.swift */; };
+		BCFF705026B29CE600603540 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF704F26B29CE600603540 /* BaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +41,19 @@
 		BCFF700426B2953800603540 /* PopularArticlesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularArticlesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFF700726B2953900603540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFF700926B2953900603540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCFF700B26B2953900603540 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCFF700E26B2953900603540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCFF701026B2953B00603540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFF701326B2953B00603540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BCFF701526B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF701A26B2953B00603540 /* PopularArticlesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularArticlesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFF701E26B2953B00603540 /* PopularArticlesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularArticlesAppTests.swift; sourceTree = "<group>"; };
 		BCFF702026B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFF702526B2953B00603540 /* PopularArticlesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopularArticlesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFF702926B2953B00603540 /* PopularArticlesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularArticlesAppUITests.swift; sourceTree = "<group>"; };
 		BCFF702B26B2953B00603540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF703B26B29B0C00603540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFF703C26B29B0C00603540 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF704326B29B5A00603540 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFF704426B29B5A00603540 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BCFF704D26B29CD800603540 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BCFF704F26B29CE600603540 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF703926B29A8A00603540 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +107,12 @@
 			children = (
 				BCFF700726B2953900603540 /* AppDelegate.swift */,
 				BCFF700926B2953900603540 /* SceneDelegate.swift */,
-				BCFF700B26B2953900603540 /* ViewController.swift */,
-				BCFF700D26B2953900603540 /* Main.storyboard */,
-				BCFF701026B2953B00603540 /* Assets.xcassets */,
+				BCFF703F26B29B5A00603540 /* Presentation */,
+				BCFF704A26B29B6A00603540 /* Domain */,
+				BCFF704726B29B6A00603540 /* Data */,
+				BCFF704926B29B6A00603540 /* Network */,
+				BCFF703A26B29B0C00603540 /* Resource */,
 				BCFF701226B2953B00603540 /* LaunchScreen.storyboard */,
-				BCFF701526B2953B00603540 /* Info.plist */,
 			);
 			path = PopularArticlesApp;
 			sourceTree = "<group>";
@@ -128,6 +135,95 @@
 			path = PopularArticlesAppUITests;
 			sourceTree = "<group>";
 		};
+		BCFF703A26B29B0C00603540 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF703B26B29B0C00603540 /* Assets.xcassets */,
+				BCFF703C26B29B0C00603540 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BCFF703F26B29B5A00603540 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704026B29B5A00603540 /* ArticleList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BCFF704026B29B5A00603540 /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704126B29B5A00603540 /* ViewModel */,
+				BCFF704226B29B5A00603540 /* View */,
+			);
+			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		BCFF704126B29B5A00603540 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCFF704226B29B5A00603540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704326B29B5A00603540 /* ViewController.swift */,
+				BCFF704426B29B5A00603540 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCFF704726B29B6A00603540 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704826B29B6A00603540 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCFF704826B29B6A00603540 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704F26B29CE600603540 /* BaseRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BCFF704926B29B6A00603540 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704D26B29CD800603540 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCFF704A26B29B6A00603540 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF704B26B29B6A00603540 /* Model */,
+				BCFF704C26B29B6A00603540 /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCFF704B26B29B6A00603540 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCFF704C26B29B6A00603540 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +240,9 @@
 			dependencies = (
 			);
 			name = PopularArticlesApp;
+			packageProductDependencies = (
+				BCFF703826B29A8A00603540 /* Alamofire */,
+			);
 			productName = PopularArticlesApp;
 			productReference = BCFF700426B2953800603540 /* PopularArticlesApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +314,9 @@
 				Base,
 			);
 			mainGroup = BCFF6FFB26B2953800603540;
+			packageReferences = (
+				BCFF703726B29A8A00603540 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = BCFF700526B2953800603540 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFF704626B29B5B00603540 /* Main.storyboard in Resources */,
+				BCFF703D26B29B0C00603540 /* Assets.xcassets in Resources */,
 				BCFF701426B2953B00603540 /* LaunchScreen.storyboard in Resources */,
-				BCFF701126B2953B00603540 /* Assets.xcassets in Resources */,
-				BCFF700F26B2953900603540 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFF700C26B2953900603540 /* ViewController.swift in Sources */,
+				BCFF704E26B29CD800603540 /* NetworkManager.swift in Sources */,
+				BCFF704526B29B5B00603540 /* ViewController.swift in Sources */,
 				BCFF700826B2953900603540 /* AppDelegate.swift in Sources */,
+				BCFF705026B29CE600603540 /* BaseRepository.swift in Sources */,
 				BCFF700A26B2953900603540 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +400,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCFF700D26B2953900603540 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCFF700E26B2953900603540 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCFF701226B2953B00603540 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +534,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC2SLUUPV4;
-				INFOPLIST_FILE = PopularArticlesApp/Info.plist;
+				INFOPLIST_FILE = PopularArticlesApp/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.articles.PopularArticlesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,7 +554,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YC2SLUUPV4;
-				INFOPLIST_FILE = PopularArticlesApp/Info.plist;
+				INFOPLIST_FILE = PopularArticlesApp/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +563,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.articles.PopularArticlesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -593,6 +691,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCFF703726B29A8A00603540 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCFF703826B29A8A00603540 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCFF703726B29A8A00603540 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCFF6FFC26B2953800603540 /* Project object */;
 }
